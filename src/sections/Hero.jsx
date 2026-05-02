@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -93,9 +93,6 @@ const Hero = () => {
             </a>
             <a href="https://www.linkedin.com/in/dhanush-kodi-selvaraj-893881357" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
               <FaLinkedin size={28} />
-            </a>
-            <a href="https://wa.me/916380843225" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
-              <FaWhatsapp size={28} />
             </a>
           </motion.div>
         </div>

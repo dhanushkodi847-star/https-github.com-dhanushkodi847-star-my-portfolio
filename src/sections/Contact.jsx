@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, MapPin, Mail } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -40,42 +40,32 @@ const Contact = () => {
           
           <div className="grid gap-6">
             <a href="mailto:dhanushkodi847@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-accent transition-colors group">
-              <div className="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full border border-white/10 group-hover:border-accent group-hover:bg-accent/10 transition-colors">
+              <div className="w-12 h-12 shrink-0 bg-white/5 flex items-center justify-center rounded-full border border-white/10 group-hover:border-accent group-hover:bg-accent/10 transition-colors">
                 <Mail className="text-accent" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold group-hover:text-accent transition-colors">Email</p>
-                <p className="text-lg font-medium">dhanushkodi847@gmail.com</p>
-              </div>
-            </a>
-
-            <a href="https://wa.me/916380843225" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-accent transition-colors group">
-              <div className="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full border border-white/10 group-hover:border-accent group-hover:bg-accent/10 transition-colors">
-                <FaWhatsapp className="text-accent text-xl" />
-              </div>
-              <div>
-                <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold group-hover:text-accent transition-colors">WhatsApp</p>
-                <p className="text-lg font-medium">+91 6380843225</p>
+                <p className="text-base sm:text-lg font-medium break-all">dhanushkodi847@gmail.com</p>
               </div>
             </a>
 
             <a href="https://www.linkedin.com/in/dhanush-kodi-selvaraj-893881357" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-accent transition-colors group">
-              <div className="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full border border-white/10 group-hover:border-accent group-hover:bg-accent/10 transition-colors">
+              <div className="w-12 h-12 shrink-0 bg-white/5 flex items-center justify-center rounded-full border border-white/10 group-hover:border-accent group-hover:bg-accent/10 transition-colors">
                 <FaLinkedin className="text-accent text-xl" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold group-hover:text-accent transition-colors">LinkedIn</p>
-                <p className="text-lg font-medium">Connect with me</p>
+                <p className="text-base sm:text-lg font-medium truncate">Connect with me</p>
               </div>
             </a>
 
             <a href="https://github.com/dhanushkodi847-star" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-accent transition-colors group">
-              <div className="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full border border-white/10 group-hover:border-accent group-hover:bg-accent/10 transition-colors">
+              <div className="w-12 h-12 shrink-0 bg-white/5 flex items-center justify-center rounded-full border border-white/10 group-hover:border-accent group-hover:bg-accent/10 transition-colors">
                 <FaGithub className="text-accent text-xl" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm text-gray-500 uppercase tracking-wider font-semibold group-hover:text-accent transition-colors">GitHub</p>
-                <p className="text-lg font-medium">dhanushkodi847-star</p>
+                <p className="text-base sm:text-lg font-medium truncate">dhanushkodi847-star</p>
               </div>
             </a>
 
