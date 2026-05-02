@@ -38,7 +38,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative w-full h-screen mx-auto flex items-center justify-center pt-20 overflow-hidden">
+    <section id="home" className="relative w-full min-h-screen mx-auto flex items-center justify-center pt-32 pb-24 md:pt-20 md:pb-0 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col-reverse md:flex-row items-center justify-between w-full z-10 gap-10">
         
         {/* Text Content */}
@@ -107,7 +107,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="flex-1 w-full flex justify-center items-center relative"
         >
-          <div className="relative w-full max-w-md h-[400px] md:h-[500px]">
+          <div className="relative w-full max-w-[280px] sm:max-w-[350px] md:max-w-md h-[280px] sm:h-[350px] md:h-[500px] mx-auto mt-10 md:mt-0">
             {/* Floating background elements */}
             <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-neonPurple/20 rounded-3xl blur-3xl"></div>
             
