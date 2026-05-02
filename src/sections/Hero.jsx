@@ -143,7 +143,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center"
+        className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center"
       >
         <p className="text-sm text-gray-400 mb-2 uppercase tracking-widest font-semibold text-[10px]">Scroll Down</p>
         <div className="w-[30px] h-[50px] rounded-3xl border-2 border-gray-400 flex justify-center items-start p-2 hover:border-accent transition-colors">
