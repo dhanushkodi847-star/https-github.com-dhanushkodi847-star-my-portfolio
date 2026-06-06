@@ -53,6 +53,29 @@
     @apply relative overflow-hidden inline-flex items-center justify-center px-8 py-3 bg-transparent text-accent border-2 border-accent border-solid font-bold rounded-full transition-all duration-300 hover:bg-accent/10 hover:scale-105 active:scale-95;
   }
 
+  .btn-resume {
+    @apply relative overflow-hidden inline-flex items-center justify-center gap-2 px-8 py-3 font-bold rounded-full transition-all duration-300 hover:scale-105 active:scale-95;
+    background: linear-gradient(135deg, #66FCF1, #a855f7);
+    color: #0B0C10;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.4), 0 0 15px rgba(102, 252, 241, 0.3);
+  }
+
+  .btn-resume:hover {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.7), 0 0 30px rgba(102, 252, 241, 0.5);
+  }
+
+  .btn-resume::after {
+    content: '';
+    @apply absolute inset-0 rounded-full;
+    background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
   .canvas-load {
     width: 50px;
     height: 50px;

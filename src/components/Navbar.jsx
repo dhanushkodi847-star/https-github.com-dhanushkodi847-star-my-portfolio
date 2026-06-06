@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { HiDownload } from 'react-icons/hi';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -44,6 +45,16 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="/Dhanushkodi_Resume.pdf"
+              download="Dhanushkodi_Resume.pdf"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent to-neonPurple text-primary font-bold rounded-full text-xs tracking-wider uppercase transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/30"
+            >
+              <HiDownload className="text-sm" />
+              Resume
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Toggle */}
@@ -71,6 +82,15 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
+            <a
+              href="/Dhanushkodi_Resume.pdf"
+              download="Dhanushkodi_Resume.pdf"
+              onClick={() => setMobileMenuOpen(false)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent to-neonPurple text-primary font-bold rounded-full text-sm tracking-wider uppercase transition-all duration-300 hover:scale-105"
+            >
+              <HiDownload className="text-base" />
+              Download Resume
+            </a>
           </motion.div>
         )}
       </div>

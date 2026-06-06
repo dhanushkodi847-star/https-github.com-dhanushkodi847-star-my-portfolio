@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiDownload } from 'react-icons/hi';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -80,6 +81,14 @@ const Hero = () => {
           >
             <a href="#projects" className="btn-primary">View Work</a>
             <a href="#contact" className="btn-outline">Contact Me</a>
+            <a 
+              href="/Dhanushkodi_Resume.pdf" 
+              download="Dhanushkodi_Resume.pdf"
+              className="btn-resume"
+            >
+              <HiDownload className="text-lg" />
+              Resume
+            </a>
           </motion.div>
           
           <motion.div
