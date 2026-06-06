@@ -7,7 +7,7 @@ import { SiMongodb, SiExpress, SiJavascript, SiTailwindcss } from 'react-icons/s
 const stats = [
   { id: 1, value: "5+", label: "Projects Built", icon: <Rocket size={20} className="text-accent" /> },
   { id: 2, value: "8+", label: "Certifications", icon: <Award size={20} className="text-neonPurple" /> },
-  { id: 3, value: "1", label: "Internship", icon: <Code size={20} className="text-accentHover" /> },
+  { id: 3, value: "2", label: "Internships", icon: <Code size={20} className="text-accentHover" /> },
   { id: 4, value: "8+", label: "Technologies", icon: <Database size={20} className="text-accent" /> },
 ];
 
